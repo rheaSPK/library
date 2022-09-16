@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: stretch;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    background-color: antiquewhite;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.book-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    min-width: 10rem;
+    text-align: center;
+  }
