@@ -1,4 +1,5 @@
 body {
+    position: relative;
     display: flex;
     justify-content: stretch;
     flex-direction: column;
@@ -20,9 +21,59 @@ body {
     justify-content: center;
     align-items: center;
 }
-table, th, td {
+.book-table table,.book-table th,.book-table td {
     border: 1px solid black;
     border-collapse: collapse;
     min-width: 10rem;
     text-align: center;
+  }
+
+.add-book {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    background-color: #00aeff;
+    bottom: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  .modal-content {
+    display: flex;
+    justify-content: center;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  .modal-content td {
+    min-width: 10rem;
+    padding: 10px;
+  }
+
+  .modal-content td:nth-child(odd) {
+    min-width: 10rem;
+    text-align: right;
   }

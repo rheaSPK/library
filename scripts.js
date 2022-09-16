@@ -24,8 +24,3 @@ function displayBook(){
     return table
 }
 
-
-addBookToLibrary(new Book("harry", "jk", 500, true))
-console.log(displayBook())
-const bookTable = document.querySelector(".book-table")
-bookTable.innerHTML = displayBook();
