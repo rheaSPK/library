@@ -87,6 +87,17 @@
             deleteBook(id)
             refreshTable()
         }
+
+        function toggleRead(id){
+            const readButton = document.querySelector(`.toggle-read[id="${id}"]`)
+            if(myLibrary[id].read){
+                myLibrary[id].read = false
+                readButton.textContent = "not read yet"
+            } else {
+                myLibrary[id].read = true
+                readButton.textContent = "already read"
+            }
+        }
     </script>
 </body>
 </html>

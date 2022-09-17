@@ -26,7 +26,7 @@ function displayBook(){
                 <td>${myLibrary[book].title}</td>
                 <td>${myLibrary[book].author}</td>
                 <td>${myLibrary[book].pages}</td>
-                <td>${myLibrary[book].read ? "already read." : "not read yet."}</td>
+                <td><button type="button" class="toggle-read" id="${book}" onclick="toggleRead(${book})">${myLibrary[book].read ? "already read." : "not read yet."}</button></td>
                 <td><button type="button" class="delete-book" id="${book}" onclick="removeBookFromTable(${book})")>Delete</button></td>
             </tr>`
         table += rowHtml
