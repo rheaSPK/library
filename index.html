@@ -92,10 +92,10 @@
             const readButton = document.querySelector(`.toggle-read[id="${id}"]`)
             if(myLibrary[id].read){
                 myLibrary[id].read = false
-                readButton.textContent = "not read yet"
+                readButton.textContent = myLibrary[id].readText()
             } else {
                 myLibrary[id].read = true
-                readButton.textContent = "already read"
+                readButton.textContent = myLibrary[id].readText() 
             }
         }
     </script>
